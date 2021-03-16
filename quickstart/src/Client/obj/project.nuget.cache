@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "B5JlWrCZkJoKNzAtdkPxgn9jlYQJWFCNKamEdh4bTvVpEUwDp1O0tTJF4zsQqwEIWbgPya4LLVCSFVkH9irXbw==",
+  "success": true,
+  "projectFilePath": "D:\\Documentos\\SLABCODE\\IdentityServer\\quickstart\\src\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sebastian Contreras\\.nuget\\packages\\identitymodel\\5.0.1\\identitymodel.5.0.1.nupkg.sha512",
+    "C:\\Users\\Sebastian Contreras\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Sebastian Contreras\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
+    "C:\\Users\\Sebastian Contreras\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
