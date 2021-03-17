@@ -25,6 +25,7 @@ namespace IdentityServer
         //CLIENTES DE ACCESO A NUESTRAS APIS SECURIZADAS 
         public static IEnumerable<Client> Clients =>
             new List<Client> {
+                //CLIENTE DE APLICACION DE CONSOLA
                 new Client
                 {
                     ClientId = "client",
@@ -41,6 +42,7 @@ namespace IdentityServer
                     // scopes that client has access to
                     AllowedScopes = { "api1" }
                 },
+                //CLIENTE DE MVC
                 new Client
                 {
                     //EL MVC ESTA CORRIENDO EN EL PUERTO 5000
@@ -58,7 +60,8 @@ namespace IdentityServer
                     AllowedScopes = new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api1"
                     }
                 }
 

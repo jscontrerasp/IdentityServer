@@ -45,3 +45,5 @@ D:\Documentos\SLABCODE\IdentityServer\quickstart\src\MvcClient\obj\Debug\net5.0\
 D:\Documentos\SLABCODE\IdentityServer\quickstart\src\MvcClient\obj\Debug\net5.0\ref\MvcClient.dll
 D:\Documentos\SLABCODE\IdentityServer\quickstart\src\MvcClient\obj\Debug\net5.0\MvcClient.pdb
 D:\Documentos\SLABCODE\IdentityServer\quickstart\src\MvcClient\obj\Debug\net5.0\MvcClient.genruntimeconfig.cache
+D:\Documentos\SLABCODE\IdentityServer\quickstart\src\MvcClient\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Documentos\SLABCODE\IdentityServer\quickstart\src\MvcClient\obj\Debug\net5.0\Razor\Views\Home\Json.cshtml.g.cs

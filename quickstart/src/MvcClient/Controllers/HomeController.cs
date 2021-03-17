@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MvcClient.Models;
+using Microsoft.AspNetCore.Authentication;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using Newtonsoft.Json.Linq;
 
 namespace MvcClient.Controllers
 {
@@ -23,9 +27,17 @@ namespace MvcClient.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        //METODO PARA TRAER INFO DEL TOKEN
+        public async Task<IActionResult> CallApi()
         {
-            return View();
+            var accessToken = await HttpContext.GetTokenAsync("access_token");
+
+            var client = new HttpClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+            var content = await client.GetStringAsync("https://localhost:6001/identity");
+
+            ViewBag.Json = JArray.Parse(content).ToString();
+            return View("json");
         }
 
         public IActionResult Logout()

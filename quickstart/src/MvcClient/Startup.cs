@@ -43,10 +43,12 @@ namespace MvcClient
                     options.ClientSecret = "secret";
                     options.ResponseType = "code";
 
+                    //WHEN SaveTokens is enabled, ASP.NET Core will automatically store the resulting
+                    ////access and refresh token in the authentication session
                     options.SaveTokens = true;
 
-                    options.Scope.Add("profile");
-                    options.GetClaimsFromUserInfoEndpoint = true;
+                    options.Scope.Add("api1");
+                    //options.Scope.Add("offline_access");
                 });
 
         }
